@@ -1,6 +1,5 @@
 
-ccMiner 1.8.2 (August 2016) "Veltor algo Thor's Riddle streebog"
----------------------------------------------------------------
+ccMiner 1.8.3 (Sept 2016) "CUDA 8 Final Release"
 
 ***************************************************************
 If you find this tool useful and like to support its continuous
@@ -157,7 +156,7 @@ its command line interface and options.
       --plimit=150W     set the gpu power limit, allow multiple values for N cards
       --tlimit=85       Set the gpu thermal limit (windows only)
       --keep-clocks     prevent reset clocks and/or power limit on exit
-      --hide-diff       hide submitted block and net difficulty
+      --hide-diff       Hide submitted shares diff and net difficulty
   -B, --background      run the miner in the background
       --benchmark       run in offline benchmark mode
       --cputest         debug hashes from cpu algorithms
@@ -245,7 +244,12 @@ features.
 
 >>> RELEASE HISTORY <<<
 
-  Aug. 20th 2016  v1.8.2
+  Sep. 28th 2016  v1.8.3
+                  show intensity on startup for each cards
+                  show-diff is now used by default, use --hide-diff if not wanted
+
+  Sep. 22th 2016  v1.8.2
+                  lbry improvements by Alexis Provos
                   Prevent Windows hibernate while mining
                   veltor algo
 
