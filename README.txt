@@ -1,5 +1,6 @@
 
-ccMiner 1.8.3 (Sept 2016) "CUDA 8 Final Release"
+ccminer 1.8.4-dev (Nov 2016) "Winter improvements: sib, veltor"
+---------------------------------------------------------------
 
 ***************************************************************
 If you find this tool useful and like to support its continuous
@@ -244,6 +245,9 @@ features.
 
 >>> RELEASE HISTORY <<<
 
+  Nov. 2016
+                  Improve streebog based algos, veltor and sib (from alexis work)
+
   Sep. 28th 2016  v1.8.3
                   show intensity on startup for each cards
                   show-diff is now used by default, use --hide-diff if not wanted
@@ -251,7 +255,7 @@ features.
   Sep. 22th 2016  v1.8.2
                   lbry improvements by Alexis Provos
                   Prevent Windows hibernate while mining
-                  veltor algo
+                  veltor algo (basic implementation)
 
   Aug. 10th 2016  v1.8.1
                   SIA Blake2-B Algo (getwork over stratum for Suprnova)
