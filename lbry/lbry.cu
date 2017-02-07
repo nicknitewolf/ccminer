@@ -187,6 +187,8 @@ extern "C" int scanhash_lbry(int thr_id, struct work *work, uint32_t max_nonce, 
 				return work->valid_nonces;
 
 			} else if (vhash[7] > ptarget[7]) {
+				gpu_increment_reject(thr_id);
+				if (!opt_quiet)
 				gpulog(LOG_WARNING, thr_id, "result for %08x does not validate on CPU %08x > %08x!", resNonces[0], vhash[7], ptarget[7]);
 				cudaMemset(d_resNonce[thr_id], 0xFF, 2 * sizeof(uint32_t));
 			}
